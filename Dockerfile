@@ -17,7 +17,7 @@ RUN wget -O /hadoop.tar.gz -q http://archive.apache.org/dist/hadoop/core/hadoop-
         && mv /hadoop-2.7.3 /usr/local/hadoop \
         && rm /hadoop.tar.gz
 
-RUN wget -O /spark.tar.gz -q https://archive.apache.org/dist/spark/spark-3.1.1/spark-3.1.1-bin-hadoop2.7.tgz
+RUN wget -O /spark.tar.gz -q https://archive.apache.org/dist/spark/spark-3.0.2/spark-3.0.2-bin-hadoop2.7.tgz
 RUN tar xfz spark.tar.gz
 RUN mv /spark-3.0.2-bin-hadoop2.7 /usr/local/spark
 RUN rm /spark.tar.gz
